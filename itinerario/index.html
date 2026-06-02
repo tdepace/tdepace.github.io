@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scozia + Londra · 8–16 Agosto · Diario di Viaggio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f3ecdc;
+    --paper-dark: #e8dec7;
+    --ink: #1f2a22;
+    --ink-soft: #3d4a3f;
+    --moss: #2d4a36;
+    --moss-deep: #1a3327;
+    --rust: #b85c3a;
+    --rust-deep: #8a3f25;
+    --gold: #c89d4a;
+    --crimson: #8a2f3a;
+    --line: rgba(31, 42, 34, 0.18);
+    --shadow: 0 1px 2px rgba(31,42,34,0.08), 0 8px 24px rgba(31,42,34,0.10);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 380;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--paper);
+    background-image:
+      radial-gradient(at 20% 10%, rgba(184, 92, 58, 0.06) 0%, transparent 50%),
+      radial-gradient(at 80% 60%, rgba(45, 74, 54, 0.05) 0%, transparent 50%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12 0 0 0 0 0.16 0 0 0 0 0.13 0 0 0 0.06 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    min-height: 100vh;
+  }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 60px 32px 120px; }
+
+  /* COVER */
+  .cover {
+    text-align: center;
+    padding: 40px 0 80px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .cover::before {
+    content: "✦";
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    color: var(--rust);
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+  .eyebrow {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; font-style: italic;
+    font-variation-settings: 'opsz' 14, 'SOFT' 100;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    font-size: 11px;
+    color: var(--rust-deep);
+    margin-bottom: 24px;
+  }
+  h1.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 350;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+    font-size: clamp(54px, 8vw, 88px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    color: var(--moss-deep);
+    margin-bottom: 24px;
+  }
+  h1.title em {
+    font-style: italic;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+    color: var(--rust);
+  }
+  .subtitle {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 24;
+    font-size: 22px;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+    max-width: 620px;
+    margin-left: auto; margin-right: auto;
+  }
+  .meta-strip {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .meta-item { text-align: center; }
+  .meta-label {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 10px; font-weight: 500;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  .meta-value {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; font-size: 17px;
+    color: var(--moss-deep);
+  }
+
+  /* OPEN POINTS BANNER */
+  .open-points {
+    background: linear-gradient(135deg, rgba(138, 47, 58, 0.08), rgba(138, 47, 58, 0.03));
+    border: 1px solid rgba(138, 47, 58, 0.2);
+    border-left: 4px solid var(--crimson);
+    padding: 28px 32px;
+    margin-bottom: 80px;
+    border-radius: 2px;
+  }
+  .open-points h2 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--crimson);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .open-points ul {
+    list-style: none;
+    padding: 0;
+  }
+  .open-points li {
+    padding: 10px 0 10px 28px;
+    border-bottom: 1px dashed rgba(138, 47, 58, 0.2);
+    position: relative;
+    font-size: 16px;
+  }
+  .open-points li::before {
+    content: "▢";
+    position: absolute;
+    left: 0; top: 10px;
+    color: var(--crimson);
+    font-size: 14px;
+  }
+  .open-points li:last-child { border-bottom: none; }
+  .open-points li strong { font-weight: 600; color: var(--moss-deep); }
+  .open-points .urgent {
+    background: var(--crimson);
+    color: var(--paper);
+    padding: 1px 7px;
+    font-size: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  /* INTRO */
+  .intro {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .intro h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 72, 'SOFT' 100;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 1.05;
+    color: var(--moss-deep);
+  }
+  .intro p { margin-bottom: 16px; }
+  .intro p:last-child { margin-bottom: 0; }
+
+  /* DAY */
+  .day { margin-bottom: 96px; position: relative; }
+  .day-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    align-items: baseline;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .day-number {
+    font-family: 'Fraunces', serif;
+    font-weight: 250;
+    font-variation-settings: 'opsz' 144;
+    font-size: 88px;
+    line-height: 0.85;
+    color: var(--rust);
+    letter-spacing: -0.04em;
+  }
+  .day-info { display: flex; flex-direction: column; gap: 4px; }
+  .day-date {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 11px;
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+  .day-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 350;
+    font-variation-settings: 'opsz' 72, 'SOFT' 50;
+    font-size: 36px;
+    line-height: 1.05;
+    color: var(--moss-deep);
+    letter-spacing: -0.01em;
+  }
+  .day-title em { font-style: italic; font-weight: 300; color: var(--rust-deep); }
+  .day-lede {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 680px;
+    margin-bottom: 32px;
+    padding-left: 24px;
+    border-left: 2px solid var(--rust);
+  }
+
+  /* HOTEL CARD (reservation banner) */
+  .hotel-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    background: var(--paper-dark);
+    border-left: 3px solid var(--moss);
+    padding: 18px 22px;
+    margin: 28px 0;
+    font-size: 15px;
+  }
+  .hotel-icon {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    color: var(--moss);
+    font-size: 22px;
+    line-height: 1;
+  }
+  .hotel-body { line-height: 1.5; }
+  .hotel-body .hotel-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    color: var(--moss-deep);
+    font-size: 16px;
+  }
+  .hotel-body .hotel-address {
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  .hotel-conf {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: right;
+    line-height: 1.4;
+  }
+  .hotel-conf strong { color: var(--moss-deep); font-weight: 600; }
+
+  /* TRANSPORT CARD */
+  .transport-card {
+    background: rgba(45, 74, 54, 0.06);
+    border-left: 3px solid var(--gold);
+    padding: 16px 22px;
+    margin: 20px 0;
+    font-size: 14.5px;
+    line-height: 1.55;
+  }
+  .transport-label {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--rust-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 10px;
+    margin-bottom: 4px;
+  }
+  .transport-card strong { color: var(--moss-deep); font-weight: 600; }
+
+  .content-block { margin-bottom: 24px; }
+  .content-block h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--rust-deep);
+    margin-bottom: 12px;
+  }
+  .content-block p { margin-bottom: 12px; }
+
+  .stops { list-style: none; padding: 0; counter-reset: stop; }
+  .stops li {
+    padding: 10px 0 10px 28px;
+    border-bottom: 1px dashed var(--line);
+    position: relative;
+  }
+  .stops li::before {
+    content: counter(stop); counter-increment: stop;
+    position: absolute; left: 0; top: 12px;
+    font-family: 'Fraunces', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--rust);
+    font-size: 14px;
+  }
+  .stops li:last-child { border-bottom: none; }
+  .stops strong { font-weight: 600; color: var(--moss-deep); }
+
+  .info-box {
+    background: var(--paper-dark);
+    padding: 18px 22px;
+    border-left: 3px solid var(--gold);
+    margin: 20px 0;
+    font-size: 15px;
+  }
+  .info-box .info-label {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--moss-deep);
+    margin-right: 8px;
+  }
+
+  .pro-tip {
+    margin-top: 24px;
+    padding: 16px 22px;
+    background: linear-gradient(135deg, rgba(184, 92, 58, 0.08), rgba(184, 92, 58, 0.03));
+    border: 1px solid rgba(184, 92, 58, 0.18);
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .pro-tip-label {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--rust-deep);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  .todo-box {
+    margin: 20px 0;
+    padding: 18px 22px;
+    background: linear-gradient(135deg, rgba(138, 47, 58, 0.06), rgba(138, 47, 58, 0.02));
+    border: 1px dashed var(--crimson);
+    border-radius: 2px;
+    font-size: 15px;
+  }
+  .todo-label {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--crimson);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+    margin-right: 10px;
+  }
+
+  /* TIPS */
+  .tips-section { margin-top: 120px; padding-top: 60px; border-top: 1px solid var(--line); }
+  .tips-section h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+    font-style: italic;
+    font-size: 54px;
+    color: var(--moss-deep);
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+  }
+  .tip-card h4 {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--rust-deep);
+    margin-bottom: 10px;
+  }
+  .tip-card p { font-size: 15px; line-height: 1.6; }
+
+  footer {
+    margin-top: 120px;
+    text-align: center;
+    padding-top: 48px;
+    border-top: 1px solid var(--line);
+  }
+  footer .mark {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--moss);
+    margin-bottom: 12px;
+  }
+  footer .small {
+    font-family: 'Fraunces', serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 760px) {
+    .container { padding: 32px 20px 80px; }
+    .intro { grid-template-columns: 1fr; gap: 24px; }
+    .day-header { grid-template-columns: 1fr; gap: 12px; }
+    .day-number { font-size: 60px; }
+    .day-title { font-size: 26px; }
+    .meta-strip { gap: 20px; }
+    .hotel-card { grid-template-columns: 1fr; gap: 8px; }
+    .hotel-conf { text-align: left; }
+    .tips-section h2 { font-size: 38px; }
+  }
+
+
+  /* GALLERIA FOTOGRAFICA */
+  .photo-gallery {
+    margin: 20px 0 28px;
+  }
+  .photo-caption {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+  .photo-row {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .photo-row img {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  .photo-row.single img {
+    flex: none;
+    width: 100%;
+    height: 260px;
+  }
+  @media (max-width: 600px) {
+    .photo-row img { height: 160px; }
+    .photo-row.single img { height: 200px; }
+  }
+
+  /* MAPPA GIORNALIERA (Leaflet / OpenStreetMap) */
+  .daymap {
+    margin: 24px 0 32px;
+    padding: 18px;
+    background: var(--paper-dark);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .daymap-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; font-style: italic;
+    font-variation-settings: 'opsz' 14, 'SOFT' 80;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 11px;
+    color: var(--rust-deep);
+    margin-bottom: 12px;
+  }
+  .daymap-canvas {
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    border: none;
+    background: var(--paper);
+    z-index: 0;
+  }
+
+  .daymap-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 12px;
+  }
+  .daymap-leg {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .daymap-leg-n {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; height: 20px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: var(--moss);
+    color: var(--paper);
+    font-family: 'Fraunces', serif;
+    font-size: 12px;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+
+
+
+  @media print {
+    body { background: white; }
+    .day { page-break-inside: avoid; }
+    .daymap { page-break-inside: avoid; }
+    .daymap-canvas { height: 320px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- COVER -->
+  <header class="cover">
+    <div class="eyebrow">Edimburgo · Highlands · Skye · Londra</div>
+    <h1 class="title">Scozia<br><em>& Londra</em></h1>
+    <p class="subtitle">Castelli, distillerie, e il vento dell'Atlantico sulle scogliere di Skye. Più una coda londinese con Lenny Kravitz al tramonto.</p>
+    <div class="meta-strip">
+      <div class="meta-item"><div class="meta-label">Quando</div><div class="meta-value">8 — 16 Agosto</div></div>
+      <div class="meta-item"><div class="meta-label">Notti</div><div class="meta-value">8</div></div>
+      <div class="meta-item"><div class="meta-label">Auto</div><div class="meta-value">11 — 14 Ago</div></div>
+      <div class="meta-item"><div class="meta-label">Treno</div><div class="meta-value">15 Ago</div></div>
+      <div class="meta-item"><div class="meta-label">Voli</div><div class="meta-value">Ryanair</div></div>
+    </div>
+  </header>
+
+  <!-- OPEN POINTS -->
+  <section class="open-points">
+    <h2>Open points · da prenotare</h2>
+    <ul>
+      <li><strong>Hotel Edimburgo</strong>, notti 0–1–2 (8, 9, 10 ago) — 3 notti<span class="urgent">urgente · Fringe</span></li>
+      <li><strong>Treno Edimburgo Waverley → London King's Cross</strong>, ven 15 ago mattina (LNER, ~4h20). Partenza suggerita 8:00–9:00.</li>
+      <li><strong>Spettacolo Fringe</strong>, sera del 9 ago — scegliere e prenotare su edfringe.com</li>
+      <li><strong>Edinburgh Castle</strong> — slot ingresso da prenotare online</li>
+      <li><strong>Holyrood Distillery</strong> (Giorno 1) — tour di produzione da prenotare online</li>
+      <li><strong>Distilleria 14 ago</strong> — decidere fra Dalwhinnie (sulla rotta) e Talisker (su Skye), poi prenotare tour</li>
+      <li><strong>Eilean Donan</strong>, 12 ago — biglietto online per evitare coda</li>
+      <li><strong>Cena Portree</strong>, sera 12 ago — Scorrybreac o Sea Breezes, prenotare presto</li>
+    </ul>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <h2>L'idea<br>del viaggio</h2>
+    <div>
+      <p>Tre giorni a Edimburgo per camminare tutta la Old Town, salire al castello, perdersi a Dean Village, fare il primo brindisi e una sera al Fringe. Poi le Highlands: un anello breve ma denso fra Glencoe, Skye e le distillerie, con due notti a Portree. Rientro a Edimburgo per riconsegnare l'auto e dormire una notte sul Royal Mile.</p>
+      <p>Il 15 mattina treno per Londra, concerto al Crystal Palace Bowl nel pomeriggio (Lenny Kravitz headliner con Joss Stone e Leon Thomas), notte a Whitechapel. Il 16 volo da Luton verso casa.</p>
+    </div>
+  </section>
+
+  <!-- GIORNO 0 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">00</div>
+      <div class="day-info">
+        <div class="day-date">Sabato 8 Agosto · Volo Italia → Scozia</div>
+        <div class="day-title">Atterraggio notturno a <em>Edimburgo</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Volo serale Ryanair, arrivo dopo mezzanotte. Niente programma — solo trasferimento all'hotel e crollo.</p>
+
+    <div class="transport-card">
+      <div class="transport-label">Volo · Ryanair FR7410</div>
+      <strong>Napoli → Edimburgo</strong> · partenza 22:20, arrivo 00:45 · prenotazione <strong>VTG16F</strong>
+    </div>
+
+    <div class="content-block">
+      <h3>Trasferimento aeroporto → centro</h3>
+      <p>Atterraggio all'1:00 di notte (orario del 9 agosto). A quell'ora <strong>il tram non funziona</strong> (ultima corsa ~23:30). Due opzioni:</p>
+      <ul class="stops">
+        <li><strong>Taxi / Uber</strong> dall'aeroporto al centro — ~20 minuti, ~£25–30. La soluzione più semplice dopo un volo notturno.</li>
+        <li><strong>Night Bus N22</strong> — passa ogni ora di notte, ferma in Princes Street. Più lento (~40 min) ma molto più economico.</li>
+      </ul>
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Hotel · Da prenotare</span>
+      Hotel Edimburgo per le notti 0–1–2 (8, 9, 10 ago). Zona consigliata: Old Town (Royal Mile / Grassmarket) o New Town (vicino Princes Street). Cancellabile fino all'ultimo se possibile, viste le prenotazioni del Fringe.
+    </div>
+  </section>
+
+  <!-- GIORNO 1 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">01</div>
+      <div class="day-info">
+        <div class="day-date">Domenica 9 Agosto · Edimburgo</div>
+        <div class="day-title">Old Town, Castello & <em>prima serata Fringe</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Mattina morbida (siete crollati all'1 di notte), poi Royal Mile e castello al pomeriggio. Discesa fino a Holyrood con tour di distilleria, cena, e prima sera al Fringe.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Old Town a piedi</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-01-walk.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Edinburgh Castle</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Gladstone's Land</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>St Giles' Cathedral</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Scotch Whisky Experience</span><span class="daymap-leg"><span class="daymap-leg-n">5</span>Palace of Holyroodhouse</span></div></div>
+
+    <div class="content-block">
+      <h3>Mattina (con calma)</h3>
+      <p>Colazione tarda. Royal Mile dall'alto verso il basso: si parte dall'esplanade del castello e si scende lentamente, infilandosi nei <em>closes</em> (Advocate's Close per la vista, Mary King's Close se vi va il tour sotterraneo). Sosta a Greyfriars Kirkyard (la tomba di Bobby il cagnolino) e Grassmarket.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">St Giles' Cathedral</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t03_st-giles-cathedral_01.webp" alt="St Giles' Cathedral" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Edinburgh Castle (pomeriggio)</h3>
+      <p>Prenotare online il biglietto con orario d'ingresso. Servono 2–3 ore vere. Il castello si sviluppa salendo dall'ingresso principale verso la cima della rocca, e le tappe da non perdere sono:</p>
+      <ul class="stops">
+        <li><strong>Argyll Battery</strong> — la terrazza dei cannoni appena entrati, con la vista panoramica più bella sulla città e sul Firth of Forth.</li>
+        <li><strong>One O'Clock Gun</strong> — il cannone che spara ogni giorno alle 13:00, tradizione che risale al 1861 quando serviva ai capitani delle navi ancorate a Leith per regolare i cronometri. Si vede bene dall'Esplanade, ma a metà pomeriggio si forma ressa: arrivate presto.</li>
+        <li><strong>Crown Square & gli Honours of Scotland</strong> — i gioielli della corona scozzese (i più antichi delle isole britanniche) e la Stone of Destiny, la pietra dell'incoronazione.</li>
+        <li><strong>Great Hall</strong> — la sala grande con lo spettacolare soffitto a travi in legno del 1511, voluto da re Giacomo IV.</li>
+        <li><strong>St Margaret's Chapel</strong> — la cappella del 1130, l'edificio più antico di tutta Edimburgo.</li>
+        <li><strong>Mons Meg</strong> — il gigantesco cannone d'assedio medievale del XV secolo, accanto alla cappella.</li>
+        <li><strong>Prisons of War</strong> — le segrete dove furono rinchiusi pirati e prigionieri di guerra, con un tamburino di cinque anni catturato a Trafalgar nel 1805.</li>
+        <li>Curiosità per gli amanti dei cani: il piccolo <strong>Dog Cemetery</strong>, cimitero dei cani dei soldati, visibile dall'alto.</li>
+      </ul>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Edinburgh Castle</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t01_edinburgh-castle_01.webp" alt="Edinburgh Castle" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t01_edinburgh-castle_02.webp" alt="Edinburgh Castle" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Scotch Whisky Experience</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t04_scotch-whisky-experience_01.webp" alt="Scotch Whisky Experience" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t04_scotch-whisky-experience_03.webp" alt="Scotch Whisky Experience" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Tardo pomeriggio · Discesa verso Holyrood</h3>
+      <p>Uscendo dal castello, scendete tutto il Royal Mile fino in fondo. Lungo la strada, una sosta opzionale che vale: <strong>Gladstone's Land</strong>, un palazzo del Seicento gestito dal National Trust. Sei piani ricostruiscono la vita a Edimburgo nel corso dei secoli, con stanze d'epoca allestite minuziosamente dove puoi toccare i mobili e curiosare fra i tessuti antichi — dal Settecento al Novecento. C'è anche una caffetteria contemporanea per una pausa. Dà profondità a tutta la passeggiata.</p>
+      <p>Proseguendo, tappa veloce a Canongate Kirkyard (cimitero tranquillo, tomba di Adam Smith), e arrivate davanti a <strong>Holyroodhouse Palace</strong>, la residenza reale in Scozia. Da vedere da fuori, ma la sua storia merita un pensiero: qui visse Maria Stuart, e proprio in queste stanze nel 1566 il suo segretario David Rizzio fu assassinato per mano di uomini del marito Lord Darnley — l'inizio della spirale di intrighi, omicidi e fughe che la portò alla decapitazione. Accanto, lo <strong>Scottish Parliament</strong>, edificio contemporaneo controverso dell'architetto catalano Enric Miralles, completato dalla moglie Benedetta Tagliabue dopo la sua morte. Se le gambe non reggono, fermatevi prima in un pub a Cowgate.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Gladstone's Land</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t02_gladstones-land_02.webp" alt="Gladstone's Land" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Palace of Holyroodhouse</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t05_holyroodhouse_02.webp" alt="Palace of Holyroodhouse" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g01_t05_holyroodhouse_03.webp" alt="Palace of Holyroodhouse" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Pre-cena · Holyrood Distillery (tour di produzione)</h3>
+      <p>Siete già in fondo al Royal Mile, e proprio qui — ricavata dal magazzino merci di una stazione ferroviaria dell'Ottocento — c'è la <strong>Holyrood Distillery</strong>, la prima distilleria single malt aperta in città dopo quasi un secolo (2019). Tour guidato del processo di produzione (maltaggio, macerazione, distillazione, invecchiamento), con guide giovani formate alla Heriot-Watt University, e degustazione finale di whisky appena distillato. Se il whisky non vi convince, producono anche un ottimo gin, Height of Arrows (il nome traduce la frase gaelica <em>Àrd-na-Said</em>, possibile origine del toponimo "Arthur's Seat"). <strong>Prenotare il tour online in anticipo.</strong></p>
+    </div>
+
+    <div class="content-block">
+      <h3>Cena (19:00)</h3>
+      <p>Pub tipico: <em>The Devil's Advocate</em>, <em>The Bow Bar</em>, <em>The Last Drop</em> sono tutti onesti.</p>
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Sera · Fringe da pianificare</span>
+      Edimburgo ad agosto è in piena stagione Fringe. Scegliere e prenotare uno spettacolo per la sera del 9 agosto su <strong>edfringe.com</strong>, filtrando per data e orario 20:00–22:30. Generi: commedia, teatro fisico, circo, magia, cabaret, musica live. Sedi storiche: <em>Pleasance Courtyard</em>, <em>Underbelly</em>, <em>Assembly Rooms</em>, <em>Gilded Balloon</em>. Spettacoli più richiesti esauriti settimane prima.
+    </div>
+
+    <div class="content-block">
+      <h3>Dopo lo spettacolo</h3>
+      <p>Pinta finale in zona Cowgate o Grassmarket. Durante il Fringe la città è viva fino a tardi — artisti di strada ovunque.</p>
+    </div>
+  </section>
+
+  <!-- GIORNO 2 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">02</div>
+      <div class="day-info">
+        <div class="day-date">Lunedì 10 Agosto · Edimburgo</div>
+        <div class="day-title">New Town, whisky & <em>Calton Hill al tramonto</em></div>
+      </div>
+    </div>
+    <p class="day-lede">La Edimburgo georgiana, una passeggiata fra i giardini sotto il castello, un secondo assaggio di whisky più rilassato, e il tramonto sui tetti dalla collina panoramica. Una giornata ricca ma fluida.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · New Town a piedi</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-02-walk.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Princes Street Gardens</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Portrait Gallery</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Dean Village</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Calton Hill</span></div></div>
+
+    <div class="content-block">
+      <h3>Mattina · New Town & Princes Street Gardens</h3>
+      <p>La New Town georgiana ha 250 anni esatti (l'età della Dichiarazione d'Indipendenza americana): strade ampie, piazze proporzionate, palazzi neoclassici. Princes Street, George Street, Charlotte Square.</p>
+      <p>Prima però, una passeggiata fra i <strong>Princes Street Gardens</strong>, il parco scavato nell'antico lago drenato ai piedi del castello (1,2 km, ~15 min senza soste, ma vale dilatarla). Entrando da Waverley Bridge: lo <strong>Scott Monument</strong>, torre gotica simile a una guglia di cattedrale dedicata allo scrittore Walter Scott (287 gradini fino in cima per il panorama). Proseguendo: il <strong>Floral Clock</strong>, orologio floreale del 1903 con composizioni che cambiano ogni anno; la <strong>Ross Fountain</strong> con un bel caffè vicino; e qualche curiosità che vi farà sorridere — la statua di <em>Bum the Dog</em> (il "cugino" da San Diego del celebre Greyfriars Bobby) e il <em>Wojtek the Soldier Bear Memorial</em>, monumento all'orso-soldato dell'esercito polacco che dopo la guerra visse allo zoo di Edimburgo.</p>
+      <p>Poi deviazione a <strong>Dean Village</strong> con risalita lungo il Water of Leith — il quartiere "nascosto", ex villaggio dei mugnai sul fiume, una delle cartoline più fotografate.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Princes Street Gardens</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t01_princes-street-gardens_02.webp" alt="Princes Street Gardens" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t01_princes-street-gardens_03.webp" alt="Princes Street Gardens" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Dean Village</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t03_dean-village_03.webp" alt="Dean Village" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Pomeriggio · secondo whisky, più rilassato (14:30–16:30)</h3>
+      <p>Dopo il tour di produzione di ieri alla Holyrood Distillery, oggi un assaggio più sociale e senza impegno. Due strade:</p>
+      <ul class="stops">
+        <li><strong>Whisky bar con tasting flight</strong> — il modo più autentico. Provate <em>The Bow Bar</em>, <em>Usquabae</em> o, in New Town, <em>Kay's Bar</em> (minuscolo pub in un'ex rimessa per carrozze, ottima carta di whisky): dite al barista cosa vi è piaciuto ieri, vi prepara una tris guidata.</li>
+        <li><strong>Johnnie Walker Experience</strong> (Princes St) — l'opzione "spettacolare": uno show recitato e cantato sulla storia del marchio, con questionario iniziale sui gusti e tre drink personalizzati nel prezzo (£30). Pacchiano ma divertente, se vi va il contrario del tour tecnico di ieri.</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <h3>Tardo pomeriggio · Scottish National Portrait Gallery (16:45–18:30) — opzionale</h3>
+      <p>Se vi piacciono i musei, qui c'è una gemma spesso trascurata a favore della più nota National Gallery: la <strong>Portrait Gallery</strong> in Queen St, un palazzo ottocentesco in arenaria rossa, stile neogotico, con la facciata ornata da statue di scozzesi illustri. Dentro, interni Arts and Crafts spettacolari — fregi dorati, affreschi vivaci, pavimenti in marmo, un atrio d'ingresso da fermarsi a guardare a lungo. La collezione raccoglie i ritratti degli scozzesi famosi di ogni epoca, da Bonnie Prince Charlie a Sean Connery. Gratis, si fa in 1–1.5h. <em>Saltatela tranquillamente se i musei non sono la vostra cosa.</em></p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Scottish National Portrait Gallery</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t02_portrait-gallery_01.avif" alt="Scottish National Portrait Gallery" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t02_portrait-gallery_02.webp" alt="Scottish National Portrait Gallery" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Aperitivo (19:00–19:45)</h3>
+      <p>Sosta veloce per un drink — qualsiasi bar di Rose Street o George Street va bene per ricaricare prima della salita.</p>
+    </div>
+
+    <div class="content-block">
+      <h3>Calton Hill al tramonto (20:00–21:00)</h3>
+      <p>Salita a Calton Hill (10 minuti dal centro, scalini comodi). Vista a 360° su castello, Old Town, Princes Street e Firth of Forth. Ad agosto il sole tramonta verso le <strong>20:45</strong> — puntate in cima per le 20:15. Luce dorata sui tetti, foto da cartolina. In cima trovate il monumento nazionale (le colonne incompiute, il "Disgrace") e il vecchio osservatorio.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Calton Hill</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t04_calton-hill_01.webp" alt="Calton Hill" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g02_t04_calton-hill_02.webp" alt="Calton Hill" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Sera (dalle 21:00)</h3>
+      <p>Cena tranquilla dopo la discesa. Domani si guida a sinistra per la prima volta, meglio non esagerare.</p>
+    </div>
+  </section>
+
+  <!-- GIORNO 3 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">03</div>
+      <div class="day-info">
+        <div class="day-date">Martedì 11 Agosto · Edimburgo → Highlands</div>
+        <div class="day-title">Stirling, Doune & l'arrivo a <em>Glencoe</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Mattina si ritira l'auto in centro città, a piedi dall'hotel. Pomeriggio la valle più cinematografica di Scozia.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Edimburgo → Fort William</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-03.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Edimburgo</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Stirling Castle</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Doune Castle</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Glencoe · Three Sisters</span><span class="daymap-leg"><span class="daymap-leg-n">5</span>Neptune's Staircase</span><span class="daymap-leg"><span class="daymap-leg-n">6</span>Fort William (Stepping Stone)</span></div></div>
+
+    <div class="transport-card">
+      <div class="transport-label">Auto · Ritiro</div>
+      <strong>Drivalia · Omni Q-Park, Greenside Row, EH1 3AN</strong><br>
+      Martedì 11 ago alle <strong>10:00</strong> · Renault Clio o simile, cambio automatico<br>
+      Livello -4 del parcheggio. A 5 minuti a piedi da Calton Hill. Conferma: <strong>675508852</strong> · Tel Drivalia +44 131 202 1717
+    </div>
+
+    <div class="content-block">
+      <h3>Mattina · Stirling Castle</h3>
+      <p>Ritirata l'auto, 50 minuti fino a <strong>Stirling Castle</strong>. Un detto scozzese dice che "chi controlla Stirling controlla la Scozia": arroccato su una rupe vulcanica nel punto strategico fra Lowlands e Highlands, fu teatro di eventi cruciali e casa d'infanzia di Maria Stuart. Se non volete vedere troppi castelli, è quello da scegliere. Servono 2-3 ore. Cosa cercare dentro:</p>
+      <ul class="stops">
+        <li><strong>Royal Palace</strong> — gli appartamenti reali di Giacomo V (1540), con la <em>Stirling Heads Gallery</em>: i medaglioni in quercia scolpiti con re, regine e personaggi biblici che decoravano il soffitto.</li>
+        <li><strong>Great Hall</strong> — la più grande sala medievale del paese, voluta da Giacomo IV nel 1503.</li>
+        <li><strong>Stirling Tapestries</strong> — splendidi arazzi tessuti a mano fra il 2001 e il 2014, che riproducono la serie "La caccia all'unicorno" del Metropolitan di New York.</li>
+        <li><strong>Chapel Royal</strong> — costruita nel 1594 da Giacomo VI per il battesimo del figlio, con affreschi originali del 1628.</li>
+        <li><strong>Great Kitchens</strong> — ricostruzioni scenografiche dei sontuosi banchetti reali.</li>
+        <li><strong>Queen Anne Gardens</strong> — il giardino verde affacciato sul Queen's Knot.</li>
+      </ul>
+      <p>Prenotate il biglietto online in anticipo per essere sicuri di entrare. Tutto intorno, la storia delle guerre d'indipendenza: a sud si vede il <strong>National Wallace Monument</strong>, torre gotica sul luogo dove William Wallace sconfisse gli inglesi a Stirling Bridge (1297), e a 2 miglia c'è <strong>Bannockburn</strong>, il campo dove nel 1314 Robert the Bruce vinse la battaglia che fece nascere la nazione scozzese.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Stirling Castle</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t02_stirling-castle_01.webp" alt="Stirling Castle" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Pomeriggio · Doune (se siamo in orario) e verso Glencoe</h3>
+      <p>A 20 minuti da Stirling c'è <strong>Doune Castle</strong>, un set cinematografico triplo: è il <em>Castello Leoch</em> nella prima stagione di <em>Outlander</em>, è Winterfell nell'episodio pilota di <em>Game of Thrones</em>, ed è il castello di <em>Monty Python e il Sacro Graal</em> (l'audioguida è narrata da Terry Jones in persona). <strong>Sosta da fare solo se la mattina a Stirling è filata liscia e siete in orario</strong> — il Giorno 3 ha già un lungo trasferimento davanti. Altrimenti dritti via Callander, attraversando i Trossachs.</p>
+      <p>Da lì la A82 diventa progressivamente più scenografica: prima i colli arrotondati, poi l'altopiano di <strong>Rannoch Moor</strong> — l'unica strada per chilometri, paludi infinite, nessun albero — e infine, ad annunciare l'imbocco della valle, la sagoma piramidale del <strong>Buachaille Etive Mor</strong>, la montagna-cartolina che presidia l'ingresso del Glen Coe. Poco dopo, la discesa nella <strong>valle di Glencoe</strong> vera e propria.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Doune Castle</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t03_doune-castle_03.webp" alt="Doune Castle" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Tardo pomeriggio · Glencoe</h3>
+      <p>Una delle valli più belle e drammatiche di Scozia, e anche una delle più cupe nella memoria. Qui, il 13 febbraio 1692, si consumò il <strong>massacro di Glencoe</strong>: i soldati del clan Campbell, che per giorni erano stati ospitati dai MacDonald, li uccisero nel sonno — 38 tra uomini, donne e bambini — su ordine di Guglielmo III, per punire la loro presunta lealtà alla causa giacobita. Uno degli episodi più brutali della storia scozzese, e il paesaggio severo della valle sembra ancora portarne il peso.</p>
+      <p>Il viewpoint delle <strong>Three Sisters</strong> — i tre imponenti contrafforti del versante sud — è obbligato: parcheggio al Three Sisters Car Park, a metà valle. Se l'orario e il tempo reggono, vale la salita alla <strong>Lost Valley</strong> (Coire Gabhail, "la conca delle prede"): 2,5 miglia a/r, circa 3 ore, sentiero che attraversa la gola su un ponte pedonale e sbuca in una valle nascosta e invisibile dal basso, dove un tempo i MacDonald nascondevano il bestiame rubato. Servono scarpe da trekking — a tratti si cammina sulle rocce.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Glencoe</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t04_glencoe_02.webp" alt="Glencoe" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Sera · arrivo a Fort William</h3>
+      <p>Da Glencoe a Fort William è poco più di mezz'ora. La cittadina è adagiata sulle rive del Loch Linnhe ed è la "capitale dell'outdoor" del Regno Unito: per essere onesti, il centro non è il suo punto forte (la strada trafficata corre tra le case e il loch), ma è la base perfetta per la notte e il trampolino verso la Road to the Isles di domani. La vera attrazione le sta dietro: il <strong>Ben Nevis</strong> (1344 m), la vetta più alta della Gran Bretagna, che però resta spesso nascosta tra le nuvole.</p>
+      <p>Se arrivate con un po' di luce, vale una sosta veloce a <strong>Corpach</strong> (15 min, sulla strada per Glenfinnan) per la <strong>Neptune's Staircase</strong>: la scala di otto chiuse consecutive del Caledonian Canal progettato da Thomas Telford, con il Ben Nevis sullo sfondo nelle giornate limpide. Tappa fotografica gratuita e suggestiva.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Neptune's Staircase</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t05_neptunes-staircase_01.webp" alt="Neptune's Staircase" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t05_neptunes-staircase_02.webp" alt="Neptune's Staircase" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Fort William e il Loch Linnhe</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g03_t06_fort-william_03.webp" alt="Fort William e il Loch Linnhe" loading="lazy">
+      </div>
+    </div>
+
+    <div class="pro-tip">
+      <span class="pro-tip-label">Chicca storica · West Highland Museum</span>
+      Piccolo museo nel centro di Fort William (ingresso libero) con una ricca collezione sulle Highlands e sui giacobiti. Il pezzo celebre è il <em>ritratto segreto</em> di Bonnie Prince Charlie: un dipinto apparentemente astratto e illeggibile che rivela il volto del principe solo se riflesso su un cilindro di metallo — un trucco anamorfico nato quando mostrare lealtà ai giacobiti era proibito. Perfetto da incastrare tra l'arrivo e la cena, o domattina prima di partire.
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Cena · Fort William</span>
+      Qualche indirizzo della guida: <em>Lime Tree</em> (art café-ristorante con cucina del territorio), <em>Crannog Seafood</em> (pesce sul pontile del loch), e per una pinta i pub <em>Ben Nevis Inn</em> (ex granaio ai piedi del sentiero del Ben Nevis) o <em>Grog &amp; Gruel</em> sulla via principale. Meditate una birra sul tempo-record della Ben Nevis Hill Race: meno di 90 minuti su e giù dalla vetta.
+    </div>
+
+    <div class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-body">
+        <div class="hotel-name">Stepping Stone (monolocale)</div>
+        <div class="hotel-address">29 Blar Mhor Road, Caol, Fort William PH33 7HN</div>
+        <div class="hotel-address" style="font-style: italic; margin-top: 4px;">Chiavi in cassaforte sul posto · check-in 15:00–23:30</div>
+      </div>
+      <div class="hotel-conf">
+        <strong>Conferma 5217258093</strong><br>
+        PIN 2574<br>
+        Host: +44 7500 518519
+      </div>
+    </div>
+  </section>
+
+  <!-- GIORNO 4 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">04</div>
+      <div class="day-info">
+        <div class="day-date">Mercoledì 12 Agosto · Highlands → Skye</div>
+        <div class="day-title">Glenfinnan, Eilean Donan e <em>il ponte di Skye</em></div>
+      </div>
+    </div>
+    <p class="day-lede">La giornata più lunga e probabilmente la più bella. Tre tappe iconiche e l'attraversamento dello Skye Bridge a fine pomeriggio.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Fort William → Skye</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-04.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Fort William</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Glenfinnan Viaduct</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Eilean Donan Castle</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Skye Bridge</span><span class="daymap-leg"><span class="daymap-leg-n">5</span>Portree</span><span class="daymap-leg"><span class="daymap-leg-n">6</span>Borve (Cnoc Ard B&amp;B)</span></div></div>
+
+    <div class="pro-tip">
+      <span class="pro-tip-label">Opzione mattutina · Glen Nevis</span>
+      Se avete tempo prima di partire (e gambe per camminare), la valle del <strong>Glen Nevis</strong> ai piedi del Ben Nevis è spettacolare: usata come set per <em>Braveheart</em> e per i film di <em>Harry Potter</em>. Dal parcheggio in fondo alla strada parte il sentiero per le <strong>Steall Falls</strong>, cascata da circa 100 m raggiungibile in ~1,5 miglia attraverso una gola suggestiva. Da soppesare contro il lungo trasferimento di oggi: se preferite non accorciare la tappa, saltatela senza rimpianti.
+    </div>
+
+    <div class="content-block">
+      <h3>Mattina · Glenfinnan Viaduct e il Monument</h3>
+      <p>Da Fort William, mezz'ora lungo la <strong>Road to the Isles</strong> (la A830) fino a Glenfinnan. Parcheggiate al visitor centre del National Trust, salita di 10–15 minuti al viewpoint. Se volete il treno a vapore (<em>Jacobite Steam Train</em>, l'Hogwarts Express dei film), in alta stagione parte da Fort William verso le <strong>10:15</strong> con rientro nel pomeriggio: gli orari di passaggio sul viadotto sono affissi al centro, ma <strong>verificateli il giorno stesso</strong>. Il viadotto si vede benissimo anche senza prendere il treno.</p>
+      <p>In riva al Loch Shiel, a pochi passi, c'è il <strong>Glenfinnan Monument</strong>: la colonna eretta nel 1815, sormontata dalla figura di un Highlander in kilt, segna il punto esatto in cui il <strong>19 agosto 1745</strong> Bonnie Prince Charlie alzò il proprio stendardo dando inizio all'ultima, sfortunata insurrezione giacobita — conclusasi l'anno dopo nella disfatta di Culloden. Visiterete il monumento proprio nello stesso giorno dell'anno: un piccolo cortocircuito storico niente male.</p>
+    </div>
+
+    <div class="content-block">
+      <h3>Mezza giornata · Eilean Donan</h3>
+      <p>Da Glenfinnan si torna verso Fort William e si imbocca la A87 verso ovest, costeggiando Loch Garry e Loch Cluanie. Strada da cartolina per due ore. Si arriva a <strong>Dornie</strong>, dove sorge <strong>Eilean Donan</strong> (interi/bambini £12/6,50): uno dei castelli più fotografati di Scozia, su un isolotto collegato alla terraferma da un suggestivo ponte di pietra, nel punto in cui si incontrano tre loch marini (Loch Duich, Loch Long e Loch Alsh). Fondato nel XIII secolo, fu in parte distrutto nel <strong>1719</strong> durante le insurrezioni giacobite; la struttura che vediamo oggi è una ricostruzione del 1932. Visita interna 1–1.5h, ma fermatevi anche fuori per le foto di rito dal ponte.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Eilean Donan Castle</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g04_t03_eilean-donan_01.webp" alt="Eilean Donan Castle" loading="lazy">
+      </div>
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Eilean Donan · Biglietto</span>
+      Comprare biglietto online per evitare la coda all'ingresso, soprattutto in agosto.
+    </div>
+
+    <div class="content-block">
+      <h3>Sera · arrivo a Skye</h3>
+      <p>Skye Bridge da Kyle of Lochalsh, poi guida verso nord. Il B&B è a Borve, 6 km a nord di Portree (siete già sulla strada del Trotternish per domani).</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Skye Bridge</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g04_t04_skye-bridge_02.webp" alt="Skye Bridge" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Portree Harbour</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g04_t05_portree_01.webp" alt="Portree Harbour" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g04_t05_portree_03.webp" alt="Portree Harbour" loading="lazy">
+      </div>
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Cena · Portree</span>
+      Cena in paese: <em>Scorrybreac</em> (raffinato), <em>Sea Breezes</em> (pesce buono, atmosfera semplice), <em>Dulse & Brose</em>. Prenotare con anticipo, ad agosto si riempie.
+    </div>
+
+    <div class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-body">
+        <div class="hotel-name">Cnoc Ard B&B, Room 2 (host Anne)</div>
+        <div class="hotel-address">Cnoc Ard, 21 Borve, Portree IV51 9PE</div>
+        <div class="hotel-address" style="font-style: italic; margin-top: 4px;">Check-in dopo le 16:00 · 1ª di 2 notti</div>
+      </div>
+      <div class="hotel-conf">
+        <strong>Conferma HMKP4APP2E</strong><br>
+        Anne: +44 7745 488818
+      </div>
+    </div>
+  </section>
+
+  <!-- GIORNO 5 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">05</div>
+      <div class="day-info">
+        <div class="day-date">Mercoledì 13 Agosto · Skye Settentrionale</div>
+        <div class="day-title">L'anello del <em>Trotternish</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Il giro classico di Skye, in senso orario: Old Man of Storr, Kilt Rock, Quiraing. Tutto in un giorno con calma, se la mattina si parte presto. Borve è già sulla strada — partite avvantaggiati.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Anello del Trotternish</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-05.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Borve (Cnoc Ard B&amp;B)</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Old Man of Storr</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Kilt Rock &amp; Mealt Falls</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Quiraing</span><span class="daymap-leg"><span class="daymap-leg-n">5</span>Fairy Glen (Uig)</span></div></div>
+
+    <div class="content-block">
+      <h3>Tappe in ordine</h3>
+      <ul class="stops">
+        <li><strong>Old Man of Storr</strong> — partite presto (8:30 max) per evitare il pieno di pullman. Salita di ~1h fino al pinnacolo. Se piove forte, si vede comunque dal parcheggio.</li>
+        <li><strong>Kilt Rock & Mealt Falls</strong> — sosta breve, 15 minuti. La cascata che si butta direttamente in mare e la roccia a "kilt".</li>
+        <li><strong>Quiraing</strong> — il punto più drammatico dell'isola. Almeno il viewpoint dal parcheggio, idealmente i primi 30–40 minuti del sentiero per vedere la "Tavola".</li>
+        <li><strong>Fairy Glen</strong> (vicino a Uig) — se avanza tempo: collinette verdi surreali, una mezz'ora basta.</li>
+      </ul>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Old Man of Storr</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t02_old-man-of-storr_01.webp" alt="Old Man of Storr" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t02_old-man-of-storr_03.webp" alt="Old Man of Storr" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Kilt Rock & Mealt Falls</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t03_kilt-rock_01.webp" alt="Kilt Rock & Mealt Falls" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Quiraing</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t04_quiraing_03.webp" alt="Quiraing" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Fairy Glen</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t05_fairy-glen_01.webp" alt="Fairy Glen" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g05_t05_fairy-glen_02.webp" alt="Fairy Glen" loading="lazy">
+      </div>
+    </div>
+
+    <div class="pro-tip">
+      <span class="pro-tip-label">Pro tip</span>
+      La strada del Quiraing è una single-track con passing places. Andate <strong>piano</strong>, non superate mai nei tratti ciechi, fermatevi sempre alla piazzola di destra quando incrociate.
+    </div>
+
+    <div class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-body">
+        <div class="hotel-name">Cnoc Ard B&B (stessa stanza)</div>
+        <div class="hotel-address">2ª di 2 notti · check-out venerdì entro le 10:00</div>
+      </div>
+      <div class="hotel-conf">
+        Pinta serale al <em>Isles Inn</em> o cena al <em>Cuchullin</em>
+      </div>
+    </div>
+  </section>
+
+  <!-- GIORNO 6 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">06</div>
+      <div class="day-info">
+        <div class="day-date">Giovedì 14 Agosto · Skye → Edimburgo</div>
+        <div class="day-title">Una tappa ovest, una <em>distilleria</em>, e il rientro</div>
+      </div>
+    </div>
+    <p class="day-lede">Mattina ancora a Skye con una sola scelta strategica, poi giù lungo l'A87 e l'A9 con sosta whisky. Sera arrivo a Edimburgo, riconsegna auto, prima notte sul Royal Mile.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Skye → Edimburgo</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-06.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Fairy Pools</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Talisker Distillery</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Dalwhinnie Distillery</span><span class="daymap-leg"><span class="daymap-leg-n">4</span>Edimburgo (Radisson Blu)</span></div></div>
+
+    <div class="content-block">
+      <h3>Mattina · scegliere una sola</h3>
+      <p>Avete tempo per <strong>una</strong> grande tappa ovest, non tre:</p>
+      <ul class="stops">
+        <li><strong>Fairy Pools</strong> — passeggiata facile (1h totale), pozze cristalline ai piedi delle Cuillin. Romantica, fattibile per tutti.</li>
+        <li><strong>Neist Point</strong> — la punta estrema occidentale, faro su scogliere a strapiombo. 30 minuti di camminata.</li>
+        <li><strong>Dunvegan Castle</strong> — l'unico castello "vivo" dell'isola, sede del Clan MacLeod. Visita 1.5h.</li>
+      </ul>
+    </div>
+
+    <div class="content-block">
+      <h3>Pomeriggio · distilleria sulla strada</h3>
+      <p>Pranzo presto a Portree o per strada, poi partenza. Due scuole di pensiero, a seconda di quanto volete restare sull'isola:</p>
+      <ul class="stops">
+        <li><strong>Dalwhinnie</strong> — uscendo da Skye verso est: Skye Bridge → Invergarry → Spean Bridge → Laggan. Praticamente in linea retta sulla rotta verso Edimburgo, perfetta sosta di metà pomeriggio. Highland classico, miele e malto leggero. (Non è coperta dalla guida, verificate orari e tour sul sito.)</li>
+        <li><strong>Talisker</strong> — a Carbost, sud-ovest di Portree (~30 min): l'<em>unica</em> distilleria storica di Skye, fondata nel 1830, in un complesso di edifici bianchi sulla costa occidentale dell'isola. Il single malt più popolare delle isole britanniche, affumicato e salato. Tour con degustazione da circa £15. Vi tiene un'ora in più sull'isola ma allunga il rientro.</li>
+      </ul>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Talisker Distillery</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t02_talisker-distillery_01.webp" alt="Talisker Distillery" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t02_talisker-distillery_02.webp" alt="Talisker Distillery" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Dalwhinnie Distillery</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t03_dalwhinnie-distillery_01.webp" alt="Dalwhinnie Distillery" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t03_dalwhinnie-distillery_03.webp" alt="Dalwhinnie Distillery" loading="lazy">
+      </div>
+    </div>
+
+    <div class="todo-box">
+      <span class="todo-label">Distilleria · Da decidere e prenotare</span>
+      <strong>Dalwhinnie</strong> (sulla rotta di rientro, comodo) oppure <strong>Talisker</strong> (su Skye, vi tiene un'ora in più sull'isola ma allunga il rientro). In entrambe, una persona beve e l'altra guida — oppure si acquista il <em>driver's dram</em>, la dose da portare a casa per chi è al volante. Prenotate il tour online in anticipo: ad agosto si riempiono.
+    </div>
+
+    <div class="transport-card">
+    <div class="photo-gallery">
+      <div class="photo-caption">Edimburgo al rientro</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t04_edinburgh_02.webp" alt="Edimburgo al rientro" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g06_t04_edinburgh_03.webp" alt="Edimburgo al rientro" loading="lazy">
+      </div>
+    </div>
+
+      <div class="transport-label">Auto · Riconsegna</div>
+      <strong>Drivalia · Omni Q-Park, Edimburgo centro</strong><br>
+      Venerdì 14 ago alle <strong>19:00</strong> (riconsegna in ritardo possibile senza penali)<br>
+      Da Skye a Edimburgo: ~5h30 di guida pure + 1h distilleria. Partenza da Portree consigliata entro le 9:30.
+    </div>
+
+    <div class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-body">
+        <div class="hotel-name">Radisson Blu Hotel, Edinburgh City Centre</div>
+        <div class="hotel-address">The Royal Mile, Old Town, Edimburgo EH1 1TH</div>
+        <div class="hotel-address" style="font-style: italic; margin-top: 4px;">Check-in 15:00–24:00 · colazione inclusa</div>
+      </div>
+      <div class="hotel-conf">
+        <strong>Conferma 6884111678</strong><br>
+        Tel +44 131 473 6523
+      </div>
+    </div>
+  </section>
+
+  <!-- GIORNO 7 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">07</div>
+      <div class="day-info">
+        <div class="day-date">Venerdì 15 Agosto · Edimburgo → Londra → Concerto</div>
+        <div class="day-title">Treno per Londra & <em>Lenny Kravitz al Crystal Palace Bowl</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Mattina presto in stazione, treno LNER per Londra, check-in a Whitechapel, poi sud Londra per il concerto. Giornata-cuscinetto fra Scozia e festival.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · Edimburgo → Londra</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-07.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Edimburgo Waverley</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Hyatt Place Whitechapel</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Crystal Palace Bowl</span></div></div>
+
+    <div class="todo-box">
+      <span class="todo-label">Treno · Da prenotare</span>
+      <strong>LNER Edinburgh Waverley → London King's Cross</strong>, ~4h20. Partenza suggerita 8:00–9:00 per arrivare a Londra a mezzogiorno con margine. Prenotare con anticipo su <strong>lner.co.uk</strong> o <strong>trainline.com</strong>: prezzo cresce con il tempo (£50–70 ora, fino a £150+ sotto data). Da Waverley a piedi dal Radisson sono ~5 minuti.
+    </div>
+
+    <div class="content-block">
+      <h3>Mattina · partenza</h3>
+      <p>Check-out dal Radisson, breve passeggiata fino alla stazione di Edinburgh Waverley. Treno verso sud — costa scozzese, Northumberland, Yorkshire. Bei finestrini, prendete posti lato corridoio est se possibile.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Edinburgh Waverley Station</div>
+      <div class="photo-row ">
+        <img src="https://tdepace.github.io/immagini_scozia/g07_t01_edinburgh-waverley_02.webp" alt="Edinburgh Waverley Station" loading="lazy">
+        <img src="https://tdepace.github.io/immagini_scozia/g07_t01_edinburgh-waverley_03.webp" alt="Edinburgh Waverley Station" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Pomeriggio · arrivo a Londra</h3>
+      <p>Arrivo a King's Cross. Metro Hammersmith & City o Circle Line fino a <strong>Aldgate East</strong> (15 minuti, 1 cambio), poi 8 minuti a piedi al Hyatt Place. Drop bagagli al banco (check-in formale dalle 15:00 ma di solito accettano i bagagli prima).</p>
+    </div>
+
+    <div class="content-block">
+      <h3>Concerto · Crystal Palace Bowl (cancelli 14:00)</h3>
+      <p>Da Whitechapel al Crystal Palace Bowl ci sono ~45 minuti in transporto pubblico (Overground o National Rail via London Bridge → Crystal Palace), oppure Uber 30–35 minuti senza traffico.</p>
+      <p><strong>Headliner Lenny Kravitz</strong>, con Leon Thomas, Joss Stone & altri. Per un festival di questa scala, Lenny Kravitz suona tra le 20:30 e le 22:30. Pomeriggio rilassato con gli opening, picnic sul prato (controllate cosa è permesso portare dentro), tramonto in concerto.</p>
+    </div>
+
+    <div class="transport-card">
+      <div class="transport-label">Concerto · Ticketmaster</div>
+      <strong>Lenny Kravitz at Crystal Palace Bowl with Leon Thomas, Joss Stone & More</strong><br>
+      Sab 15 Ago · cancelli 14:00 · 2× General Admission · ordine <strong>9-48235/UK4</strong>
+    </div>
+
+    <div class="content-block">
+      <h3>Dopo concerto</h3>
+      <p>Rientro verso Whitechapel — metro/treno fino a mezzanotte circa, dopo Uber. Notte fonda a Londra.</p>
+    </div>
+
+    <div class="hotel-card">
+      <div class="hotel-icon">⌂</div>
+      <div class="hotel-body">
+        <div class="hotel-name">Hyatt Place London City East</div>
+        <div class="hotel-address">Black Lion House, 45 Whitechapel Road, Tower Hamlets, London E1 1DU</div>
+        <div class="hotel-address" style="font-style: italic; margin-top: 4px;">Check-in dalle 15:00 · Camera King Deluxe · deposito £25 all'arrivo</div>
+      </div>
+      <div class="hotel-conf">
+        <strong>Conferma 6884120139</strong><br>
+        Tel +44 20 8159 1234
+      </div>
+    </div>
+  </section>
+
+  <!-- GIORNO 8 -->
+  <section class="day">
+    <div class="day-header">
+      <div class="day-number">08</div>
+      <div class="day-info">
+        <div class="day-date">Domenica 16 Agosto · Londra → Napoli</div>
+        <div class="day-title">Mattinata a Whitechapel & <em>volo da Luton</em></div>
+      </div>
+    </div>
+    <p class="day-lede">Mattinata libera nei dintorni dell'hotel — Brick Lane, Spitalfields, Tower of London. Pomeriggio transfer a Luton per il volo.</p>
+
+    <div class="daymap"><div class="daymap-title">Mappa della giornata · East London → Luton</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-08-walk.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Brick Lane</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Tower of London</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>London Luton Airport</span></div></div>
+
+    <div class="content-block">
+      <h3>Mattinata · East London</h3>
+      <p>Whitechapel è zona ottima per l'ultimo giorno: <strong>Brick Lane</strong> a 5 minuti a piedi (street food, mercatini se è domenica), <strong>Spitalfields Market</strong> a 10 minuti (mercato coperto, brunch buoni), <strong>Tower of London e Tower Bridge</strong> a 15 minuti a piedi. Check-out entro le 12:00.</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Brick Lane</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g08_t01_brick-lane_03.webp" alt="Brick Lane" loading="lazy">
+      </div>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="photo-caption">Tower of London</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g08_t02_tower-of-london_02.webp" alt="Tower of London" loading="lazy">
+      </div>
+    </div>
+
+    <div class="content-block">
+      <h3>Pomeriggio · transfer Luton</h3>
+      <p>Da Whitechapel: metro Hammersmith & City fino a King's Cross/St Pancras (~15 min), poi treno Thameslink o EMR <strong>St Pancras → Luton Airport Parkway</strong> (~25 min), poi navetta gratuita dal Parkway al terminal (~10 min). Totale ~1h. Partite dall'hotel <strong>almeno 3h45 prima del volo</strong> — quindi entro le 13:35.</p>
+    </div>
+
+    <div class="transport-card">
+    <div class="photo-gallery">
+      <div class="photo-caption">Luton Airport</div>
+      <div class="photo-row single">
+        <img src="https://tdepace.github.io/immagini_scozia/g08_t03_luton-airport_03.webp" alt="Luton Airport" loading="lazy">
+      </div>
+    </div>
+
+      <div class="transport-label">Volo · Ryanair FR5455</div>
+      <strong>Luton (LTN) → Napoli (NAP)</strong><br>
+      Partenza 17:20, arrivo 21:05 · prenotazione <strong>Q21L2G</strong>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section class="tips-section">
+    <h2>Note <em>pratiche</em></h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h4>Guida a sinistra</h4>
+        <p>Le prime due ore sono le peggiori, poi diventa naturale. Le single-track delle Highlands hanno <em>passing places</em>: ci si ferma a destra (mai accosto a sinistra) quando si incrocia. Mai sorpassare in tratto cieco.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Meteo</h4>
+        <p>Ad agosto piove un giorno sì e uno no. Giacca impermeabile, scarpe da trekking, due magliette di scorta in zaino piccolo. Il "tempo brutto" in Scozia non esiste, esiste solo l'attrezzatura sbagliata.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Midges</h4>
+        <p>I moscerini delle Highlands. A Skye in agosto possono essere fastidiosi al tramonto. Spray <em>Smidge</em> al primo supermercato.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Distillerie</h4>
+        <p>I tour vanno <strong>prenotati prima</strong>, anche di settimane in agosto. Una persona beve, l'altra guida (o <em>driver's dram</em> da portare a casa).</p>
+      </div>
+      <div class="tip-card">
+        <h4>Explorer Pass</h4>
+        <p>L'<em>Explorer Pass</em> di Historic Environment Scotland (£44, 7 giorni) copre Edimburgo, Stirling, Doune. Si ripaga con due castelli.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Visita al castello</h4>
+        <p>Biglietti online in anticipo per saltare le code (lunghe in agosto). Le visite guidate in inglese partono dall'ingresso principale ogni ~30 minuti dalle 9:45, comprese nel biglietto. Zaini ingombranti non ammessi dentro: lasciateli in hotel.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Camminate al Glen Coe</h4>
+        <p>Scalare le montagne del Glen Coe è riservato ad alpinisti esperti: non avventuratevi verso le cime senza esperienza in quota. Le camminate facili e sicure sono <em>Lost Valley</em>, <em>An Torr</em>, <em>Signal Rock</em> e <em>Glencoe Lochan</em>.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Cibo</h4>
+        <p>Da provare: <em>full Scottish breakfast</em>, <em>haggis</em> (anche "chips & haggis"), <em>cullen skink</em> a Skye (zuppa di pesce affumicato), <em>cranachan</em> come dolce.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Bagagli</h4>
+        <p>Per Skye fate borsa piccola con cambi 2 giorni, lasciate il grosso in auto. Per Londra portate scarpe diverse — il concerto significa stare in piedi 6+ ore.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Connessione</h4>
+        <p>4G stabile a Edimburgo, Fort William, Portree, ovviamente Londra. Tra una città e l'altra (Rannoch Moor, Quiraing, Trotternish) sparisce tutto. Scaricate Google Maps offline.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="mark">— buon viaggio —</div>
+    <div class="small">Itinerario · 8/16 Agosto · Versione 3.1</div>
+  </footer>
+
+</div>
+
+
+</body>
+</html>
