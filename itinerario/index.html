@@ -504,6 +504,61 @@
     .photo-row.single img { height: 200px; }
   }
 
+
+  /* INDICE GIORNATE */
+  .day-index {
+    margin: 32px 0 40px;
+    padding: 24px 28px;
+    background: var(--paper-dark);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .day-index h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 72, 'SOFT' 100;
+    font-size: 22px;
+    color: var(--moss-deep);
+    margin-bottom: 16px;
+  }
+  .day-index a {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    transition: color 0.2s;
+  }
+  .day-index a:last-child { border-bottom: none; }
+  .day-index a:hover { color: var(--rust); }
+  .day-index .idx-num {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--moss);
+    min-width: 32px;
+  }
+  .day-index .idx-body {
+    flex: 1;
+  }
+  .day-index .idx-date {
+    font-family: 'Fraunces', serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--rust-deep);
+  }
+  .day-index .idx-title {
+    font-family: 'Newsreader', serif;
+    font-size: 16px;
+    color: var(--ink-soft);
+    margin-top: 2px;
+  }
+
   /* MAPPA GIORNALIERA (Leaflet / OpenStreetMap) */
   .daymap {
     margin: 24px 0 32px;
@@ -629,8 +684,21 @@
     </div>
   </section>
 
+  <section class="day-index">
+    <h2>Indice delle giornate</h2>
+    <a href="#g0"><span class="idx-num">00</span><span class="idx-body"><span class="idx-date">Sab 8 Ago</span><span class="idx-title">Volo serale → Edimburgo</span></span></a>
+    <a href="#g1"><span class="idx-num">01</span><span class="idx-body"><span class="idx-date">Dom 9 Ago</span><span class="idx-title">Old Town, Castello & prima serata Fringe</span></span></a>
+    <a href="#g2"><span class="idx-num">02</span><span class="idx-body"><span class="idx-date">Lun 10 Ago</span><span class="idx-title">New Town, whisky & Calton Hill al tramonto</span></span></a>
+    <a href="#g3"><span class="idx-num">03</span><span class="idx-body"><span class="idx-date">Mar 11 Ago</span><span class="idx-title">Stirling, Doune & l'arrivo a Glencoe</span></span></a>
+    <a href="#g4"><span class="idx-num">04</span><span class="idx-body"><span class="idx-date">Mer 12 Ago</span><span class="idx-title">Glenfinnan, Eilean Donan e il ponte di Skye</span></span></a>
+    <a href="#g5"><span class="idx-num">05</span><span class="idx-body"><span class="idx-date">Gio 13 Ago</span><span class="idx-title">L'anello del Trotternish</span></span></a>
+    <a href="#g6"><span class="idx-num">06</span><span class="idx-body"><span class="idx-date">Ven 14 Ago</span><span class="idx-title">Una tappa ovest, una distilleria, e il rientro</span></span></a>
+    <a href="#g7"><span class="idx-num">07</span><span class="idx-body"><span class="idx-date">Sab 15 Ago</span><span class="idx-title">Treno per Londra & Lenny Kravitz</span></span></a>
+    <a href="#g8"><span class="idx-num">08</span><span class="idx-body"><span class="idx-date">Dom 16 Ago</span><span class="idx-title">Mattinata a Whitechapel & volo da Luton</span></span></a>
+  </section>
+
   <!-- GIORNO 0 -->
-  <section class="day">
+  <section class="day" id="g0">
     <div class="day-header">
       <div class="day-number">00</div>
       <div class="day-info">
@@ -661,7 +729,7 @@
   </section>
 
   <!-- GIORNO 1 -->
-  <section class="day">
+  <section class="day" id="g1">
     <div class="day-header">
       <div class="day-number">01</div>
       <div class="day-info">
@@ -777,7 +845,7 @@
   </section>
 
   <!-- GIORNO 2 -->
-  <section class="day">
+  <section class="day" id="g2">
     <div class="day-header">
       <div class="day-number">02</div>
       <div class="day-info">
@@ -858,7 +926,7 @@
   </section>
 
   <!-- GIORNO 3 -->
-  <section class="day">
+  <section class="day" id="g3">
     <div class="day-header">
       <div class="day-number">03</div>
       <div class="day-info">
@@ -971,7 +1039,7 @@
   </section>
 
   <!-- GIORNO 4 -->
-  <section class="day">
+  <section class="day" id="g4">
     <div class="day-header">
       <div class="day-number">04</div>
       <div class="day-info">
@@ -1092,7 +1160,7 @@
   </section>
 
   <!-- GIORNO 5 -->
-  <section class="day">
+  <section class="day" id="g5">
     <div class="day-header">
       <div class="day-number">05</div>
       <div class="day-info">
@@ -1167,7 +1235,7 @@
   </section>
 
   <!-- GIORNO 6 -->
-  <section class="day">
+  <section class="day" id="g6">
     <div class="day-header">
       <div class="day-number">06</div>
       <div class="day-info">
@@ -1254,7 +1322,7 @@
   </section>
 
   <!-- GIORNO 7 -->
-  <section class="day">
+  <section class="day" id="g7">
     <div class="day-header">
       <div class="day-number">07</div>
       <div class="day-info">
@@ -1326,7 +1394,7 @@
   </section>
 
   <!-- GIORNO 8 -->
-  <section class="day">
+  <section class="day" id="g8">
     <div class="day-header">
       <div class="day-number">08</div>
       <div class="day-info">
@@ -1430,7 +1498,7 @@
 
   <footer>
     <div class="mark">— buon viaggio —</div>
-    <div class="small">Itinerario · 8/16 Agosto · Versione 3.7</div>
+    <div class="small">Itinerario · 8/16 Agosto · Versione 3.8</div>
   </footer>
 
 </div>
