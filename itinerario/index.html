@@ -571,6 +571,61 @@
     }
   }
 
+
+  /* RIEPILOGO TRASPORTI */
+  .transport-summary {
+    margin: 32px 0;
+    padding: 28px 24px;
+    background: var(--paper-dark);
+    border: 2px solid var(--moss);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  .transport-summary h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 300;
+    font-variation-settings: 'opsz' 72, 'SOFT' 100;
+    font-size: 28px;
+    color: var(--moss-deep);
+    margin-bottom: 20px;
+  }
+  .transport-summary .ts-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .transport-summary .ts-item:last-child { border-bottom: none; }
+  .transport-summary .ts-icon {
+    font-size: 22px;
+    flex-shrink: 0;
+    width: 36px;
+    text-align: center;
+    padding-top: 2px;
+  }
+  .transport-summary .ts-body { flex: 1; }
+  .transport-summary .ts-label {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--moss-deep);
+    margin-bottom: 4px;
+  }
+  .transport-summary .ts-detail {
+    font-size: 15px;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .transport-summary .ts-detail strong { color: var(--moss-deep); }
+  .transport-summary .ts-conf {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+  }
+
   /* INDICE GIORNATE */
   .day-index {
     margin: 32px 0 40px;
@@ -696,6 +751,7 @@
     <span class="sticky-title">Scozia &amp; Londra · Agosto 2026</span>
     <div class="sticky-nav-links">
       <a href="#open-points">Open Points</a>
+      <a href="#trasporti">Trasporti</a>
       <a href="#indice">Giornate</a>
       <a href="#info-utili">Info utili</a>
     </div>
@@ -725,7 +781,6 @@
     <h3>Logistica & trasporti</h3>
     <ul>
       <li><strong>Hotel Edimburgo</strong>, notti 0–1–2 (8, 9, 10 ago) — 3 notti<span class="urgent">urgente · Fringe</span></li>
-      <li><strong>Treno Edimburgo Waverley → London King's Cross</strong>, sab 15 ago mattina (LNER, ~4h20). Partenza suggerita 8:00–9:00.</li>
     </ul>
 
     <h3>Esperienze & biglietti</h3>
@@ -756,6 +811,46 @@
     <div>
       <p>Tre giorni a Edimburgo per camminare tutta la Old Town, salire al castello, perdersi a Dean Village, fare il primo brindisi e una sera al Fringe. Poi le Highlands: un anello breve ma denso fra Glencoe, Skye e le distillerie, con due notti a Portree. Rientro a Edimburgo per riconsegnare l'auto e dormire una notte sul Royal Mile.</p>
       <p>Il 15 mattina treno per Londra, concerto al Crystal Palace Bowl nel pomeriggio (Lenny Kravitz headliner con Joss Stone e Leon Thomas), notte a Whitechapel. Il 16 volo da Luton verso casa.</p>
+    </div>
+  </section>
+
+  <section class="transport-summary" id="trasporti">
+    <h2>Trasporti confermati</h2>
+
+    <div class="ts-item">
+      <div class="ts-icon">✈</div>
+      <div class="ts-body">
+        <div class="ts-label">Volo andata · sab 8 agosto</div>
+        <div class="ts-detail"><strong>Napoli → Edimburgo</strong> · Ryanair FR7410 · partenza 22:20, arrivo 00:45 (9 ago)</div>
+        <div class="ts-conf">Prenotazione VTG16F</div>
+      </div>
+    </div>
+
+    <div class="ts-item">
+      <div class="ts-icon">🚗</div>
+      <div class="ts-body">
+        <div class="ts-label">Auto a noleggio · mar 11 → ven 14 agosto</div>
+        <div class="ts-detail"><strong>Drivalia</strong> · ritiro h10 / riconsegna h19 (ritardo OK) · Omni Q-Park, Greenside Row EH1 3AN</div>
+        <div class="ts-conf">Prenotazione 675508852 · +44 131 202 1717</div>
+      </div>
+    </div>
+
+    <div class="ts-item">
+      <div class="ts-icon">🚂</div>
+      <div class="ts-body">
+        <div class="ts-label">Treno · sab 15 agosto</div>
+        <div class="ts-detail"><strong>Edinburgh Waverley → London Kings Cross</strong> · Lumo · partenza <strong>08:26</strong>, arrivo <strong>12:47</strong> (4h 21min, diretto)<br>Carrozza A, posti 07 (corridoio) + 08 (finestrino) · Standard Class</div>
+        <div class="ts-conf">Transazione Trainline 581790032999 · biglietto non rimborsabile</div>
+      </div>
+    </div>
+
+    <div class="ts-item">
+      <div class="ts-icon">✈</div>
+      <div class="ts-body">
+        <div class="ts-label">Volo ritorno · dom 16 agosto</div>
+        <div class="ts-detail"><strong>London Luton → Napoli</strong> · Ryanair FR5455 · partenza 17:20, arrivo 21:05</div>
+        <div class="ts-conf">Prenotazione Q21L2G</div>
+      </div>
     </div>
   </section>
 
@@ -1405,18 +1500,20 @@
         <div class="day-title">Treno per Londra & <em>Lenny Kravitz al Crystal Palace Bowl</em></div>
       </div>
     </div>
-    <p class="day-lede">Mattina presto in stazione, treno LNER per Londra, check-in a Whitechapel, poi sud Londra per il concerto. Giornata-cuscinetto fra Scozia e festival.</p>
+    <p class="day-lede">Sveglia presto, treno Lumo delle 8:26 per Londra, arrivo a King's Cross alle 12:47. Check-in a Whitechapel, poi sud per il concerto. Giornata-cuscinetto fra Scozia e festival.</p>
 
     <div class="daymap"><div class="daymap-title">Mappa della giornata · Edimburgo → Londra</div><iframe src="https://tdepace.github.io/mappe/mappa-giorno-07.html" class="daymap-canvas" loading="lazy" allowfullscreen></iframe><div class="daymap-legend"><span class="daymap-leg"><span class="daymap-leg-n">1</span>Edimburgo Waverley</span><span class="daymap-leg"><span class="daymap-leg-n">2</span>Hyatt Place Whitechapel</span><span class="daymap-leg"><span class="daymap-leg-n">3</span>Crystal Palace Bowl</span></div></div>
 
-    <div class="todo-box">
-      <span class="todo-label">Treno · Da prenotare</span>
-      <strong>LNER Edinburgh Waverley → London King's Cross</strong>, ~4h20. Partenza suggerita 8:00–9:00 per arrivare a Londra a mezzogiorno con margine. Prenotare con anticipo su <strong>lner.co.uk</strong> o <strong>trainline.com</strong>: prezzo cresce con il tempo (£50–70 ora, fino a £150+ sotto data). Da Waverley a piedi dal Radisson sono ~5 minuti.
+    <div class="transport-card">
+      <div class="transport-label">Treno · Lumo (via Trainline)</div>
+      <strong>Edinburgh Waverley → London Kings Cross</strong> · partenza <strong>08:26</strong>, arrivo <strong>12:47</strong> (4h 21min, diretto)<br>
+      Carrozza A, posti <strong>07</strong> (corridoio) + <strong>08</strong> (finestrino) · 2× Standard Class<br>
+      Transazione Trainline: 581790032999 · biglietto non rimborsabile, solo questo treno
     </div>
 
     <div class="content-block">
       <h3>Mattina · partenza</h3>
-      <p>Check-out dal Radisson, breve passeggiata fino alla stazione di Edinburgh Waverley. Treno verso sud — costa scozzese, Northumberland, Yorkshire. Bei finestrini, prendete posti lato corridoio est se possibile.</p>
+      <p>Check-out dal Radisson Blu, cinque minuti a piedi fino a Edinburgh Waverley. Treno Lumo delle <strong>8:26</strong> — avete i posti in Carrozza A, 07 (corridoio) e 08 (finestrino). Quattro ore e mezza verso sud lungo la costa scozzese, Northumberland, Yorkshire: bei paesaggi dal finestrino, portatevi la colazione.</p>
     </div>
 
     <div class="photo-gallery">
@@ -1573,7 +1670,7 @@
 
   <footer>
     <div class="mark">— buon viaggio —</div>
-    <div class="small">Itinerario · 8/16 Agosto · Versione 3.9</div>
+    <div class="small">Itinerario · 8/16 Agosto · Versione 4.1</div>
   </footer>
 
 </div>
