@@ -1670,7 +1670,7 @@
 
   <footer>
     <div class="mark">— buon viaggio —</div>
-    <div class="small">Itinerario · 8/16 Agosto · Versione 4.1</div>
+    <div class="small">Itinerario · 8/16 Agosto · Versione 4.2</div>
   </footer>
 
 </div>
@@ -1680,9 +1680,9 @@
 <script>
 (function() {
   var nav = document.getElementById('sticky-nav');
-  var indice = document.getElementById('indice');
-  if (!nav || !indice) return;
-  var threshold = indice.offsetTop + indice.offsetHeight;
+  var openPts = document.getElementById('open-points');
+  if (!nav || !openPts) return;
+  var threshold = openPts.offsetTop - 60;
   var last = 0;
   window.addEventListener('scroll', function() {
     var y = window.scrollY || window.pageYOffset;
